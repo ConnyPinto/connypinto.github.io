@@ -1,3 +1,28 @@
 body {
     background-color: blue;
+    color: white;
+    font-size:40px;
+    font-family: "gill sans", futura, sans-serif;
+    text-align: right;
+}
+
+p {
+    margin: 60px; 
+}
+.paragraph2 {
+    color: yellow;
+}
+
+.one{
+    width: 200px;
+    height: 200px;
+    background-color : yellow;
+    position: fixed;
+    bottom: 55px;
+    left: 50px;
+    border-radius:100px;
+}
+
+.one:hover {
+    background-color: white;
 }
