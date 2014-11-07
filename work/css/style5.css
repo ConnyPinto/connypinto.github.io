@@ -1,0 +1,94 @@
+body {
+	background-color: black;
+	
+}
+
+.g {
+	color:white;
+	position:absolute;
+	left: 130px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "rockwell";
+	text-decoration: none;
+
+}
+
+.o1 {
+	color:yellow;
+	position:absolute;
+	left: 290px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "rockwell";
+	text-decoration: none;
+
+}
+
+.o2 {
+	color:yellow;
+	position:absolute;
+	left: 430px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "rockwell";
+	text-decoration: none;
+
+}
+
+.d {
+	color:white;
+	position:absolute;
+	left: 585px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "rockwell";
+	text-decoration: none;
+
+}
+
+.b {
+	color:white;
+	position:absolute;
+	left: 730px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "rockwell";
+	text-decoration: none;
+
+}
+
+.y {
+	color:white;
+	position:absolute;
+	left: 865px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "rockwell";
+	text-decoration: none;
+
+}
+
+.e {
+	color:white;
+	position:absolute;
+	left: 1010px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "rockwell";
+	text-decoration: none;
+
+}
+
+.linkword {
+	color:white;
+	position:absolute;
+	left: 450px;
+	top: 440px;
+	font-size: 25px;
+	letter-spacing: 5 px;
+	font-family: "helvetica";
+	text-decoration: none;
+
+
+}

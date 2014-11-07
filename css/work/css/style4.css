@@ -1,0 +1,165 @@
+body {
+	background-color: black;
+	margin: 0;
+	padding: 0;
+
+}
+
+.y {
+	color:white;
+	position:absolute;
+	left: 120px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "impact";
+	text-decoration: none;
+
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: red;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.o {
+	color:white;
+	position:absolute;
+	left: 215px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "impact";
+	text-decoration: none;
+
+}
+
+.u {
+	color:white;
+	position:absolute;
+	left: 325px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "impact";
+	text-decoration: none;
+
+}
+
+.a1 {
+	color:white;
+	position:absolute;
+	left: 500px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "impact";
+	text-decoration: none;
+
+}
+
+.r1 {
+	color:white;
+	position:absolute;
+	left: 610px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "impact";
+	text-decoration: none;
+
+}
+
+.e {
+	color:white;
+	position:absolute;
+	left: 720px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "impact";
+	text-decoration: none;
+
+}
+
+.s {
+	color:white;
+	position:absolute;
+	left: 875px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "impact";
+	text-decoration: none;
+
+}
+
+.t {
+	color:white;
+	position:absolute;
+	left: 985px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "impact";
+	text-decoration: none;
+
+}
+
+.a2 {
+	color:white;
+	position:absolute;
+	left: 1080px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "impact";
+	text-decoration: none;
+
+}
+
+.r2 {
+	color:white;
+	position:absolute;
+	left: 1195px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "impact";
+	text-decoration: none;
+
+}
+
+.i {
+	color:white;
+	position:absolute;
+	left: 1310px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "impact";
+	text-decoration: none;
+
+}
+
+.n {
+	color:white;
+	position:absolute;
+	left: 1370px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "impact";
+	text-decoration: none;
+
+}
+
+.g {
+	color:white;
+	position:absolute;
+	left: 1485px;
+	top: 110px;
+	font-size: 100px;
+	font-family: "impact";
+	text-decoration: none;
+
+}
