@@ -19,17 +19,19 @@ body {
     color: white;
     top: 50%;
     left: 50%;
+    line-height: 25px;
     transform: translate (-50%, -50%;)
 }
 
-.work {
+
+.content {
     font-family: didot;
     position: absolute;
     top: 62%;
-    left: 55%;
-    transform: translate (-50%, -50%;)
+    left: 50%;
     font-size: 15px;
     color: white;
+    transform: translate (-50%, -50%;)
 }
 
 
