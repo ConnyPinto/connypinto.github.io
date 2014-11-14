@@ -25,7 +25,9 @@ body {
 .work {
     font-family: didot;
     position: absolute;
-    text-align :right;
+    top: 62%;
+    left: 55%;
+    transform: translate (-50%, -50%;)
     font-size: 15px;
     color: white;
 }
@@ -43,13 +45,43 @@ a:visited {
 
 
 a:hover {
-    color: white;
+    color: red;
 }
 
 
 a:active {
     color: white;
 }
+
+.jquery {
+    font-family: didot;
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    transform: translate (-50%, -50%;)
+    font-size: 15px;
+    color: white;
+}
+
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: white;
+}
+
+
+a:hover {
+    color: red;
+}
+
+
+a:active {
+    color: white;
 
 /*.circle {*/
 /*    position: absolute;*/
