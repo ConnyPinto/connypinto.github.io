@@ -10,8 +10,8 @@ body{
     width: 900px;
     height: 60px;
     font-family: Didot;
-    top:50%;
-    left:50%;
+    top:200px;
+    left:100px;
     color:white;
     background-color: black;
 }
