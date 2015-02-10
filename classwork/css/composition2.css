@@ -1,8 +1,87 @@
 body{
-    background-color: blue;
-    font-size: 48px;
-    font-family:Helvetica, arial, sans-serif;
+    background-color:black;
+    color:#d5d5d5;
+}
+
+.one{
+    font-size: 150;
+    font-family:Cochin, arial, sans-serif;
+}
+
+.motherson{
+    height:600px;
+    display: inline-block;
+    position:absolute;
+    border:40px solid grey;
+    
+}
+
+.motherson-wrapper:hover{
+    background-color:red;
+    display:inline-block;
+    padding:25px;
+}
+
+.box{
+    width:800px;
+    height:800px;
+    border:30px solid red; 
+    margin: 5px;
+    position: absolute;
+    z-index: 0;
+    top:600px;
+    left: 150px;
+
+}
+
+.story{
+    margin-top:400px;
+    position:absolute;
+    z-index:2;
 }
 
 
-.one
+.two{
+    font-size:80;
+    font-family:cochin;
+}
+
+.three{
+    font-size:80;
+    font-family:cochin;
+}
+
+.attack{
+    font-size:100;
+    background-color:red;
+}
+
+.red{
+    width:1000px;
+    height:500px;
+    position:absolute;
+    z-index:-1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.four{
+    font-size:80;
+    font-family:cochin;
+}
+
+.scissorman{
+    float: right;
+    height:500;
+}
+
+.oh{
+    font-size:120;
+}
+
+.five{
+    font-size:80;
+    font-family:cochin;
+}
+
+
