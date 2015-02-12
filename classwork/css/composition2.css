@@ -8,6 +8,16 @@ body{
     font-family:Cochin, arial, sans-serif;
 }
 
+.thumbsucker{
+    float: left;
+    position:absolute;
+    z-index:-2;
+    height:400px;
+    border:40px solid red;
+    display: inline-block;
+    
+}
+
 .motherson{
     height:600px;
     display: inline-block;
@@ -54,6 +64,7 @@ body{
 .attack{
     font-size:100;
     background-color:red;
+    font-family:"arial black";
 }
 
 .red{
@@ -73,10 +84,14 @@ body{
 .scissorman{
     float: right;
     height:500;
+    border:60px solid red;
 }
 
 .oh{
     font-size:120;
+    background-color:#d5d5d5;
+    color:black;
+    font-family:"arial black";
 }
 
 .five{
@@ -84,4 +99,24 @@ body{
     font-family:cochin;
 }
 
+.snip{
+    font-size:120;
+    font-family:"arial black";
+    
+}
 
+.ah2{
+     font-size:100;
+     font-family:"arial black";
+    }
+
+.teargif{
+    float: left;
+    position:absolute;
+    display: inline-block;
+    height:500px;
+    border:60px solid red;
+    z-index:-1;
+    
+    
+}
