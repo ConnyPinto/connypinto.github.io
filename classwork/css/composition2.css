@@ -5,7 +5,7 @@ body{
 
 .one{
     font-size: 140;
-    font-family:Cochin, arial, sans-serif;
+    font-family:Cochin, georgia, serif;
 }
 
 .thumbsucker{
@@ -53,12 +53,12 @@ body{
 
 .two{
     font-size:80;
-    font-family:cochin;
+    font-family:cochin,, georgia, serif;
 }
 
 .three{
     font-size:80;
-    font-family:cochin;
+    font-family:cochin, georgia, serif;
 }
 
 .attack{
@@ -78,7 +78,7 @@ body{
 
 .four{
     font-size:80;
-    font-family:cochin;
+    font-family:cochin, georgia, serif;
 }
 
 .scissorman{
@@ -96,7 +96,7 @@ body{
 
 .five{
     font-size:80;
-    font-family:cochin;
+    font-family:cochin, georgia, serif;
 }
 
 .snip{
