@@ -37,20 +37,20 @@ body{
 
 
 .content{
-    width:900px;
+    width:700px;
     margin:0 auto;
     
 }
 
 .quote{
-    color:white;
+    color:grey;
     font-family: 'Old Standard TT', serif;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom:10px;
-    font-size: 14pt;
-    width:900px;
+    font-size: 16pt;
+    width:700px;
     
     
 }
