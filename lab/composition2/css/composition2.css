@@ -1,0 +1,128 @@
+body{
+    background-color:black;
+    color:#d5d5d5;
+    padding-left:5px;
+}
+
+.one{
+    font-size: 120;
+    font-family:Cochin, georgia, serif;
+}
+
+.thumbsucker{
+    float: right;
+    position:absolute;
+    z-index:-2;
+    height:300px;
+    border:40px solid red;
+    display: inline-block;
+    
+}
+
+.motherson{
+    height:500px;
+    display: inline-block;
+    position:absolute;
+    border:40px solid grey;
+    
+}
+
+.motherson-wrapper:hover{
+    background-color:red;
+    display:inline-block;
+    padding:25px;
+}
+
+.box{
+    width:600px;
+    height:600px;
+    border:30px solid red; 
+    margin: 5px;
+    position: absolute;
+    z-index: 0;
+    top:600px;
+    left: 150px;
+
+}
+
+.story{
+    margin-top:400px;
+    position:absolute;
+    z-index:2;
+    width:100%;
+}
+
+
+.two{
+    font-size:40;
+    font-family:cochin,, georgia, serif;
+}
+
+.three{
+    font-size:40;
+    font-family:cochin, georgia, serif;
+}
+
+.attack{
+    font-size:100;
+    background-color:red;
+    font-family:"arial black";
+    width:100%;
+}
+
+.red{
+    width:700px;
+    height:500px;
+    position:absolute;
+    left:200px;
+    right:200px;
+    z-index:-1;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.four{
+    font-size:40;
+    font-family:cochin, georgia, serif;
+}
+
+.scissorman{
+    float: right;
+    height:350;
+    border:50px solid red;
+}
+
+.oh{
+    font-size:120;
+    background-color:#d5d5d5;
+    color:black;
+    font-family:"arial black";
+    width:100%;
+}
+
+.five{
+    font-size:40;
+    font-family:cochin, georgia, serif;
+}
+
+.snip{
+    font-size:120;
+    font-family:"arial black";
+    
+}
+
+.ah2{
+     font-size:100;
+     font-family:"arial black";
+    }
+
+.teargif{
+    float: left;
+    position:absolute;
+    display: inline-block;
+    height:300;
+    border:50px solid red;
+    z-index:-1;
+    
+    
+}

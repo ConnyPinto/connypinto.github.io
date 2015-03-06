@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Space</title>
+    <link rel="stylesheet" href="css/window.css" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="javascript/jquery.zoomooz.min.js"></script>
+</head>
+
+<body>
+    <div class="allwindows">
+    <div class="row1">
+    <a href="room1.html" class="window window1"> </a>
+    <a href="room2.html" class="window window2"> </a>
+    <a href="room3.html" class="window window3"> </a> 
+    </div>
+    <div class="row2">
+    <a href="room4.html" class="window window4"> </a>
+    <a href="room5.html" class="window window5"> </a>
+    <a href="room6.html" class="window window6"> </a>
+    </div>
+    <div class="row3">
+    <a href="room7.html" class="window window7"> </a>
+    <a href="room8.html" class="window window8"> </a>
+    <a href="room9.html" class="window window9"> </a> 
+    </div>
+    <div class="row4">
+    <a href="room10.html" class="window window10"> </a>
+    <a href="room11.html" class="window window11"> </a>
+    <a href="room12.html" class="window window12"> </a>
+    </div>
+    </div> 
+
+     <script>  
+        $(document).ready(function() {
+            $(".window").click(function(evt) {
+                evt.stopPropagation();
+                if (!$(this).hasClass('zoomed')) {
+                    evt.preventDefault();
+                    $(this).zoomTo({targetsize:0.75, duration:600});
+                    $('.window').removeClass('zoomed');
+                    $(this).addClass('zoomed');
+                }
+            });
+            
+            $('body').click(function () {
+                $(this).zoomTo({});
+                $('.window').removeClass('zoomed');
+            })
+        });
+    </script>
+        
+</body>
+
+</html>

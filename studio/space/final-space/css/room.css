@@ -1,0 +1,86 @@
+body{
+    background-color: black;
+    font-family: 'Old Standard TT', serif;
+    font-style: italic;
+    margin-bottom:35px;
+}
+
+.lense {
+    background-repeat: no-repeat;
+    width: 564px;
+    height:564px;
+    display: block;
+    font-size: 0;
+    margin:0 auto;
+    margin-bottom:40px;
+    margin-top:40px;
+}
+.lense:hover {
+    background-position: 0 -565px;
+}
+
+
+/*.lense{
+    margin:0 auto;
+    margin-top:80px;
+    margin-bottom:114px;}*/
+    
+
+.right-window:hover {
+    background-position: 0 -255px;
+}
+
+.left-window:hover {
+    background-position: 0 -255px;
+}
+    
+
+
+.content{
+    width:900px;
+    margin:0 auto;
+    
+}
+
+.quote{
+    color:white;
+    font-family: 'Old Standard TT', serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:10px;
+    font-size: 25pt;
+    width:900px;
+    
+    
+}
+
+.eyes{
+    
+    position: relative;
+   margin:0 auto;
+   width:300px;
+
+}
+
+.sofa-button {
+    background-image: url(../images/sofa-button.png);
+    background-repeat: no-repeat;
+    width: 212px;
+    height: 67px;
+    display: inline-block;
+    font-size: 0;
+    margin:60px;
+    margin-bottom:-80px;
+    
+}
+.sofa-button:hover {
+    background-position: 0 -68px;
+}
+
+
+/*.sofa-button{
+    margin:20px;
+    margin-bottom:-70px;
+    
+}*/
