@@ -1,0 +1,44 @@
+.letter{
+    background:#ff0;
+    width:300px;
+    height:400px;
+}
+
+.bar{
+    background:#000;
+    position:relative;
+}
+
+.horizontal{
+    width:300px;
+    height:50px;
+    
+
+}
+
+.vertical{
+    background:pink;
+    width:50px;
+    height:400px;
+}
+
+a-top{
+    top:0;
+    left:0;
+}
+
+a-left{
+    top:0;
+    left:0;
+}
+
+a-right{
+    right:0;
+}
+
+a-mid{
+    left:0;
+    top:175px;
+    
+}
+

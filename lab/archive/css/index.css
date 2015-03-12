@@ -1,0 +1,354 @@
+body{
+    background-color:black;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+    
+    
+}
+
+a:hover{
+    color:yellow;
+}
+
+.wrapper{
+    margin-left:300px;
+    margin-bottom:100px;
+}
+
+.info{
+    position:fixed;
+    font-family: 'Cardo', serif;
+    bottom:0;
+    font-size:12pt;
+    color:white;
+    text-align:center;
+    display:none;
+    margin-bottom:20px;
+    margin-left: -55px;
+}
+
+.expanded .info {
+    display: block;
+}
+
+
+.wrapper{
+    margin-left:10px;
+}
+
+.bars{
+    width:25px;
+    
+    background-color:white;
+    float: left;
+    margin:10px;
+}
+
+.bar1{
+   height:93px; 
+}
+
+.bar2{
+   height:259px; 
+}
+
+.bar3{
+   height:225px; 
+}
+.bar4{
+   height:35px; 
+}
+
+.bar5{
+   height:205px; 
+}
+
+.bar6{
+   height:77px; 
+}
+
+.bar7{
+   height:79px; 
+}
+
+.bar8{
+   height:52px; 
+}
+
+.bar9{
+   height:60px; 
+}
+
+.bar10{
+   height:25px; 
+}
+
+.bar11{
+   height:120px; 
+}
+
+.bar12{
+   height:68px; 
+}
+
+.bar13{
+   height:101px; 
+}
+
+.bar14{
+   height:440px; 
+}
+
+.bar15{
+   height:21px; 
+}
+
+.bar16{
+   height:392px; 
+}
+
+.bar17{
+   height:178px; 
+}
+
+
+.bar1-expanded {
+    background-image: url(../images/kyle-grey.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar1-mousedown {
+    background-image: url(../images/kyle-color.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar2-expanded {
+    background-image: url(../images/eva-grey.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar2-mousedown {
+    background-image: url(../images/eva-color.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar3-expanded {
+    background-image: url(../images/megan-grey.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar3-mousedown {
+    background-image: url(../images/megan-color.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar4-expanded {
+    background-image: url(../images/thereasa-grey.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar4-mousedown {
+    background-image: url(../images/thereasa-color.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar5-expanded {
+    background-image: url(../images/jasmine-grey.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar5-mousedown {
+    background-image: url(../images/jasmine-color.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar6-expanded {
+    background-image: url(../images/zhiyan-grey.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar6-mousedown {
+    background-image: url(../images/zhiyan-color.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar7-expanded {
+    background-image: url(../images/urvita-grey.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar7-mousedown {
+    background-image: url(../images/urvita-color.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar8-expanded {
+    background-image: url(../images/lika-grey.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar8-mousedown {
+    background-image: url(../images/lika-color.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar9-expanded {
+    background-image: url(../images/simon-grey.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar9-mousedown {
+    background-image: url(../images/simon-color.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar10-expanded {
+    background-image: url(../images/kamila-grey.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar10-mousedown {
+    background-image: url(../images/kamila-color.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar11-expanded {
+    background-image: url(../images/herin-grey.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar11-mousedown {
+    background-image: url(../images/herin-color.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar12-expanded {
+    background-image: url(../images/sara-grey.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar12-mousedown {
+    background-image: url(../images/sara-color.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar13-expanded {
+    background-image: url(../images/conny-grey.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar13-mousedown {
+    background-image: url(../images/conny-color.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar14-expanded {
+    background-image: url(../images/urvi-grey.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar14-mousedown {
+    background-image: url(../images/urvi-color.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar15-expanded {
+    background-image: url(../images/lauren-grey.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar15-mousedown {
+    background-image: url(../images/lauren-color.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar16-expanded {
+    background-image: url(../images/vivian-grey.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar16-mousedown {
+    background-image: url(../images/vivian-color.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar17-expanded {
+    background-image: url(../images/jasmine-z-grey.jpg);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+.bar17-mousedown {
+    background-image: url(../images/jasmine-z-color.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+}
