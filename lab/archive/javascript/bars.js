@@ -3,7 +3,7 @@ $(document).ready(function () {
        var $bar = $(this);
        if (!$bar.hasClass('expanded')) {
            $bar.data('original-height', $bar.height());
-           $bar.animate({ height: '1400px' }, {
+           $bar.animate({ height: '1000px' }, {
                duration: 1000,
                progress: function () {
                    $('html,body').scrollTop($bar.height());
