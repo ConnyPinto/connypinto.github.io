@@ -1,0 +1,53 @@
+
+for (var runNumber = 1; runNumber <= 200; runNumber++) {
+for (var lineNumber=1; lineNumber <= 50; lineNumber++){
+  
+  var line= ""
+  
+  for (var center=1; center<= lineNumber; center++){
+    
+     line= line + " "
+    
+  }
+  
+   line= line + "*"
+  
+    for (var spaceNumber=0; spaceNumber <= (50 - lineNumber)*2; spaceNumber++){
+      
+      line= line + " "
+      
+    }
+  
+        line= line + "*"
+  
+  console.log(line)
+  
+}
+
+for (var lineNumber=1; lineNumber <= 50; lineNumber++){
+  
+  var line= ""
+  
+  for (var center=1; center<= (50-lineNumber); center++){
+    
+     line= line + " "
+    
+  }
+  
+   line= line + "*"
+  
+    for (var spaceNumber=0; spaceNumber <= 100-((50-lineNumber)*2); spaceNumber++){
+      
+      line= line + " "
+      
+    }
+  
+        line= line + "*"
+  
+  console.log(line)
+  
+}
+}
+</script>
+</body>
+</html>
