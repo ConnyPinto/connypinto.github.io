@@ -6,25 +6,44 @@ $(document).ready(function(){
   var FirstClickX ;
   var FirstClickY ;
   
+console.log($(".rules"));
+
+$(".rules").mousedown(function(e){
+    
+     $(".circle").show();
+     
+});
+
+$(".rules").mouseup(function(e){
+    
+     $(".circle").hide();
+     
+});
+
   if (canvas.getContext){
     var ctx = canvas.getContext('2d');
 
-drawGrid(5);
+var radius = 5;
+drawGrid(radius);
+
+$(".grid").click(function(e){
+    $(".circle").hide();
+});
 
     $("circle").click(function(e){
        
-       console.log(e)
+       console.log(e);
        
-  console.log(e.pageX)
-  console.log(e.pageY)
+  console.log(e.pageX);
+  console.log(e.pageY);
    
    if (!FirstClickX){
-     FirstClickX = e.pageX;
-     FirstClickY = e.pageY;
+     FirstClickX = e.pageX-e.offsetX+radius;
+     FirstClickY = e.pageY-e.offsetY+radius;
    }
    
    else{
-      drawLine(FirstClickX,FirstClickY,e.pageX,e.pageY)
+      drawLine(FirstClickX,FirstClickY,e.pageX-e.offsetX+radius,e.pageY-e.offsetY+radius)
       FirstClickX = null
       FirstClickY = null
    }
@@ -35,10 +54,12 @@ drawGrid(5);
 }
 
 function drawLine (x1, y1, x2, y2) {
+    ctx.strokeStyle = "#606060";
+    ctx.lineWidth = 15;
+    ctx.lineCap = "round";
     ctx.beginPath();
     ctx.moveTo(x1,y1);
     ctx.lineTo(x2,y2);
-    ctx.closePath();
     ctx.stroke(); //set color and stroke size here//
 }
 
@@ -59,7 +80,9 @@ function drawCircle(radius) {
 }
 
 function drawGrid(radius) {
-  for (var i = 0; i < 2100; i++) {
+    var circleAmount = window.outerWidth*window.outerHeight/400
+    console.log (circleAmount)
+  for (var i = 0; i < circleAmount; i++) {
     drawCircle(radius);
   }
 }
