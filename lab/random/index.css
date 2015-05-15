@@ -1,0 +1,21 @@
+body{
+    background-color:black;
+}
+.enter{
+    color:white;
+    font-size:26pt;
+    font-family:"arial black";
+}
+
+.words{
+    color:white;
+}
+
+.image{
+    float:left;
+}
+.image-wrapper{
+    margin-top:50%;
+    
+    
+}

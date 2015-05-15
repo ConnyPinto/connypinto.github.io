@@ -1,0 +1,165 @@
+/*html, body {
+    overflow: hidden;
+}*/
+
+.first-dot{
+  top:45%;  
+   position:relative;
+}
+
+.dot{
+    background-color:black;
+    width:10px;
+    height:10px;
+    border-radius:10px;
+    position:absolute;
+    left: calc(50% - 5px);
+    margin-top:10px;
+    
+}
+
+.line{
+    background-color:black;
+    width:1px;
+    position:absolute; 
+    left: calc(50% - 0.5px);
+    margin-bottom:50%;
+}
+
+.white-line{
+    background-color:transparent;
+    width:1px;
+    position:absolute; 
+    left: calc(50% - 0.5px);
+    margin-bottom:50%;
+}
+
+.horizontal-line{
+    background-color:red;
+    height:5px;
+    position:absolute; 
+    margin-right:50%;
+}
+
+
+.text{
+    position:absolute;
+    font-family: baskerville,'Libre Baskerville', serif;
+    width:100%;
+    text-align:center;
+    margin:10px;
+}
+
+.baby{
+    display:block;
+   width:250px;
+   position:relative; 
+   margin:0 auto;
+   top:5%;
+  
+}
+
+.profile{
+    position:absolute;
+    width:344px;
+    bottom:0px;
+    left: calc(50% - 172px);
+    display:none;
+}
+
+.arrow-down {
+    background-image:url("../images/arrow-keys-down-black.png");
+     position:absolute;
+    width:100;
+    height:50;
+    bottom:0px;
+    left: calc(50% - 50px);
+    display:none;
+    
+}
+
+.arrow-down:hover{
+    background-image:url("../images/arrow-keys-down-white.png");
+}
+
+.database{
+     position:absolute;
+    width:100%;
+    text-align:center;
+    margin:10px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.information{
+ position:absolute;
+    width:150px;
+    left: calc(50% - 75px);
+    text-align:center;
+    margin:10px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.arrow-right {
+    background-image:url("../images/arrow-keys-right.png");
+    position:absolute;
+    width:50;
+    height:101;
+    bottom:0px;
+    right:10px;
+    display:none;
+    z-index:5;
+    
+}
+
+/*.arrow-right:hover{
+    background-image:url("../images/arrow-keys-right-white.png");
+}*/
+
+.arrow-left {
+    background-image:url("../images/arrow-keys-left.png");
+     position:absolute;
+    width:50;
+    height:101;
+    bottom:0px;
+    left:10px;
+    display:none;
+    z-index:5;
+}
+
+/*.arrow-right:hover{
+    background-image:url("../images/arrow-keys-left.png");
+}*/
+
+.database-images{
+    width:180px;
+    margin-bottom:30px;
+}
+
+database-text{
+    font-family: baskerville,'Libre Baskerville', serif;
+    font-size:10pt;
+    font-style:italic;
+}
+
+
+.refresh {
+    background-image:url("../images/restart-click.png");
+     transform: scale(0.3);
+     position:fixed;
+    width:700px;
+    height:220px;
+    top:0%;
+    right:0%;
+
+}
+.refresh:hover{
+    background-image:url("../images/restart-hover.png");
+}
+
+.informationImage{
+    width: 680px;
+    height: auto;
+    position: absolute;
+    top: -140px;
+    left: -270px;
+}

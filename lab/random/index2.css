@@ -1,0 +1,39 @@
+body{
+    background-color:black;
+    margin:0px;
+}
+.enter{
+    color:white;
+    font-size:26pt;
+    font-family:"arial black";
+    display:block;
+    position:relative;
+    margin:0 auto;
+    width:131px;
+    top:50%;
+    text-decoration:none;
+    
+}
+
+.enter:hover{
+   color:black; 
+}
+
+
+.square-left{
+	width: 50%;
+	margin-top:0px;
+	padding:0px;
+	height: 100%;
+	background: red;
+	display:block;
+	float:left;
+}
+
+.square-right{
+   width: 50%;
+	height: 100%;
+	background: yellow; 
+	float:left;
+	display:block;
+}

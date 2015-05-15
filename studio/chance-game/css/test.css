@@ -1,0 +1,13 @@
+.profile {
+    background: url('../images/test-images-01.png');
+    width: 40px;
+    height: 60px;
+}
+
+.profile:hover {
+    background: url('../images/test-images-02.png');
+}
+
+.profile:active {
+    background-position: 0 -120px;    
+}
