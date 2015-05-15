@@ -1314,9 +1314,14 @@ $(document).ready(function() {
             top: position
           });
 
+          // remove any previously set event binding
+          $('body').off('click.database-images');
 
-          $(".database-images").click(function() {
-            $("<div></div>").addClass("information");
+          // set new event binding:
+          // * set on body with selector so that it still triggers for elements that have been added dynamically
+          // * use a namespace so that we can unbind it later (see above)
+          $("body").on('click.database-images', '.database-images', function() {
+            var information = $("<div></div>").addClass("information");
             var informationImage = $("<img></img>").addClass("informationImage").attr("src", pickSave[0].profile);
 
             $(".information").append(informationImage);
@@ -1326,9 +1331,7 @@ $(document).ready(function() {
             $(".information").last().css({
               top: position
             });
-
           });
-
         }
       });
 
