@@ -1267,12 +1267,14 @@ $(document).ready(function() {
   var numberOfEnds = Math.floor(Math.random() * 4) + 1;
   var profileOrder = 0;
   var ending = false;
+  
+  var positionArrowScroll = 0;
 
+  // Added to perform click on the top left button
   $(".refresh").click(function() {
 	  location.reload(true);
 	  console.log("CLICK PARA REFRESH");
   });
-  
   
   
   console.log('.arrow-down', $('.arrow-down'));
@@ -1329,7 +1331,10 @@ $(document).ready(function() {
           // * use a namespace so that we can unbind it later (see above)
           $("body").on('click.database-images', '.database-images', function() {
             var information = $("<div></div>").addClass("information");
-            var informationImage = $("<img></img>").addClass("informationImage").attr("src", pickSave[0].profile);
+            //var informationImage = $("<img></img>").addClass("informationImage").attr("src", pickSave[0].profile);
+			var informationImage = $("<img></img>").addClass("informationImage").attr("src", pickSave[profileOrder].profile);
+			console.log("profileOrder:"+profileOrder);
+			 console.log("informationImage:"+informationImage);
 
             $(".information").append(informationImage);
 
@@ -1344,12 +1349,18 @@ $(document).ready(function() {
 
     console.log("clicked");
   });
+  
+  // Click profile
+  
+
+  
+  
 // ----------------------------------  Arrow left --------------------------------
 
   $(".arrow-left").click(function() {
 
-     var line = $("<div></div>").addClass("horizontal-line");
-    $("body").append(line);
+    //var line = $("<div></div>").addClass("horizontal-line");
+    //$("body").append(line);
 
     var position = $(".arrow-left").last().offset().left;
 
@@ -1362,14 +1373,20 @@ $(document).ready(function() {
         duration: 1000,
         progress: function() {
           var position = $(".horizontal-line").last().offset().left - $(".horizontal-line").last().width() - window.innerWidth / 2;
-          $('html,body').scrollLeft(position);
+		  //var position = $(".horizontal-line").last().offset().left - $(".horizontal-line").last().width() - window.innerWidth ;
+		  //positionArrowScroll = $(".horizontal-line").last().offset().left - $(".horizontal-line").last().width() - window.innerWidth  ;
+		  
 
-          console.log(position);
+			$('html,body').scrollLeft(position);
+			//$('html,body').scrollLeft(positionArrowScroll);
+		  
+           console.log("Progress Left Position:"+position);
         },
 
         complete: function() {
 
           var rightPosition = $(".database:visible").offset().left + $(".database:visible").width() - $(".arrow-right").width() * 2;
+		  //var rightPosition = $(".database:visible").offset().left + $(".database:visible").width() - $(".arrow-right").width() ;
           var leftPosition = $(".database:visible").offset().left;
 
           $(".arrow-right").css({
@@ -1395,7 +1412,6 @@ $(document).ready(function() {
     console.log("arrow right-clicked");
 
     var line = $("<div></div>").addClass("horizontal-line");
-
     $("body").append(line);
 
     var position = $(".database").last().offset().left + $(".database").last().width();
@@ -1410,9 +1426,12 @@ $(document).ready(function() {
         duration: 1000,
         progress: function() {
           var position = $(".horizontal-line").last().offset().left + $(".horizontal-line").last().width() - window.innerWidth / 2;
+		  //var position = $(".horizontal-line").last().offset().left + $(".horizontal-line").last().width() - window.innerWidth;
+		  //  positionArrowScroll = $(".horizontal-line").last().offset().left + $(".horizontal-line").last().width() - window.innerWidth ;
           $('html,body').scrollLeft(position);
-
-          console.log(position);
+		 //	$('html,body').scrollLeft(positionArrowScroll);
+			positionArrowScroll = position;
+          console.log("Progress Right Position:"+position);
         },
 
         complete: function() {
@@ -1434,6 +1453,7 @@ $(document).ready(function() {
           });
 
           var rightPosition = $(".database").last().offset().left + $(".database").last().width() - $(".arrow-right").width() * 2;
+		
 
           $(".arrow-right").css({
             left: rightPosition
@@ -1489,8 +1509,10 @@ $(document).ready(function() {
             $(".profile").show();
             $(".arrow-down").show();
             var position = $(".line").last().offset().top + $(".line").last().height();
-            $(".profile").last().css({
+            //var position = positionArrowScroll;
+			$(".profile").last().css({
               top: position
+			  
             });
             $(".arrow-down").last().css({
               top: position + 230
