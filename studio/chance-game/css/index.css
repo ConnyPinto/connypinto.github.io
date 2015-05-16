@@ -110,11 +110,11 @@
     z-index:5;
     
 }
-/*.arrow-right:hover{
+.arrow-right:hover{
     background-image:url("../images/arrows-02.png");
      width:48;
     height:101;
-}*/
+}
 
 .arrow-left {
     background-image:url("../images/arrow-keys-01.png");
@@ -127,11 +127,11 @@
     z-index:5;
 }
 
-/*.arrow-right:hover{
+.arrow-right:hover{
 background-image:url("../images/arrows-01.png");
       width:48;
     height:101;
-}*/
+}
 
 .database-images{
     width:180px;
@@ -158,6 +158,7 @@ background-image:url("../images/arrows-01.png");
 .refresh:hover{
     background-image:url("../images/restart-hover.png");
 }
+
 
 .informationImage{
     width: 680px;
