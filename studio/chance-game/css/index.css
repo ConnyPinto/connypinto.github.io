@@ -47,7 +47,7 @@
     font-family: baskerville,'Libre Baskerville', serif;
     width:100%;
     text-align:center;
-    margin:10px;
+    margin:12px;
 }
 
 .baby{
@@ -100,7 +100,7 @@
 }
 
 .arrow-right {
-    background-image:url("../images/arrow-keys-right.png");
+    background-image:url("../images/arrow-keys-02.png");
     position:absolute;
     width:50;
     height:101;
@@ -110,13 +110,14 @@
     z-index:5;
     
 }
-
 /*.arrow-right:hover{
-    background-image:url("../images/arrow-keys-right-white.png");
+    background-image:url("../images/arrows-02.png");
+     width:48;
+    height:101;
 }*/
 
 .arrow-left {
-    background-image:url("../images/arrow-keys-left.png");
+    background-image:url("../images/arrow-keys-01.png");
      position:absolute;
     width:50;
     height:101;
@@ -127,7 +128,9 @@
 }
 
 /*.arrow-right:hover{
-    background-image:url("../images/arrow-keys-left.png");
+background-image:url("../images/arrows-01.png");
+      width:48;
+    height:101;
 }*/
 
 .database-images{
@@ -135,9 +138,9 @@
     margin-bottom:30px;
 }
 
-database-text{
+.database-text{
     font-family: baskerville,'Libre Baskerville', serif;
-    font-size:10pt;
+    font-size:1pt;
     font-style:italic;
 }
 
@@ -148,8 +151,8 @@ database-text{
      position:fixed;
     width:700px;
     height:220px;
-    top:0%;
-    right:0%;
+    top:0px;
+    right:0px;
 
 }
 .refresh:hover{
