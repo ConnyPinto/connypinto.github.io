@@ -450,14 +450,14 @@ var beginning = [
   {
     text: 'Her father was an alcoholic who abused and cheated on her mother for years',
     criminal: "CharlizeTheron",
-    img: "images/baby-pictures/baby-theron.jpg",
+    img: "images/baby-pictures/baby-theron.jpeg",
     profile: "images/profile-pictures/theron.png",
   },
 
   {
     text: 'One night, while she was sleeping upstairs her mum shot her father dead when he tried to attack her.',
     criminal: "CharlizeTheron",
-    img: "images/baby-pictures/baby-theron.jpg",
+    img: "images/baby-pictures/baby-theron.jpeg",
     profile: "images/profile-pictures/theron.png",
   },
 
@@ -909,7 +909,7 @@ var middle = [{
   {
     text: 'In primary school she was characterised as never "fitting in".',
     criminal: "CharlizeTheron",
-    img: "images/baby-pictures/baby-theron.jpg",
+    img: "images/baby-pictures/baby-theron.jpeg",
     profile: "images/profile-pictures/theron.png",
   },
 
@@ -1138,7 +1138,7 @@ var end = [{
   {
     text: 'At age 16 she won a one-year modeling contract...',
     criminal: "CharlizeTheron",
-    img: "images/baby-pictures/baby-theron.jpg",
+    img: "images/baby-pictures/baby-theron.jpeg",
     profile: "images/profile-pictures/theron.png",
   },
 
@@ -1267,7 +1267,7 @@ $(document).ready(function() {
   var numberOfEnds = Math.floor(Math.random() * 4) + 1;
   var profileOrder = 0;
   var ending = false;
-<<<<<<< HEAD
+  var currentProfile=0;
   
   var positionArrowScroll = 0;
 
@@ -1278,9 +1278,6 @@ $(document).ready(function() {
   });
   
   
-=======
-
->>>>>>> f91f51fd40aaeb621afa6e3d4a8bcf23990e189b
   console.log('.arrow-down', $('.arrow-down'));
   $(".arrow-down").click(function() {
     console.log("clicked");
@@ -1335,14 +1332,10 @@ $(document).ready(function() {
           // * use a namespace so that we can unbind it later (see above)
           $("body").on('click.database-images', '.database-images', function() {
             var information = $("<div></div>").addClass("information");
-<<<<<<< HEAD
             //var informationImage = $("<img></img>").addClass("informationImage").attr("src", pickSave[0].profile);
 			var informationImage = $("<img></img>").addClass("informationImage").attr("src", pickSave[profileOrder].profile);
 			console.log("profileOrder:"+profileOrder);
 			 console.log("informationImage:"+informationImage);
-=======
-            var informationImage = $("<img></img>").addClass("informationImage").attr("src", pickSave[0].profile);
->>>>>>> f91f51fd40aaeb621afa6e3d4a8bcf23990e189b
 
             $(".information").append(informationImage);
 
@@ -1350,7 +1343,6 @@ $(document).ready(function() {
 
             $(".information").last().css({
               top: position
-<<<<<<< HEAD
             });
           });
         }
@@ -1364,51 +1356,40 @@ $(document).ready(function() {
 
   
   
-// ----------------------------------  Arrow left --------------------------------
+// ----------------------------------  Arrow left -------------------------------- 
 
   $(".arrow-left").click(function() {
-
-    //var line = $("<div></div>").addClass("horizontal-line");
-    //$("body").append(line);
-
-    var position = $(".arrow-left").last().offset().left;
-
-    $(".horizontal-line").last().css({
-      left: position
-    }).animate({
-        width: window.innerWidth
-      },
-      {
-        duration: 1000,
-        progress: function() {
-          var position = $(".horizontal-line").last().offset().left - $(".horizontal-line").last().width() - window.innerWidth / 2;
-		  //var position = $(".horizontal-line").last().offset().left - $(".horizontal-line").last().width() - window.innerWidth ;
-		  //positionArrowScroll = $(".horizontal-line").last().offset().left - $(".horizontal-line").last().width() - window.innerWidth  ;
-		  
-
-			$('html,body').scrollLeft(position);
-			//$('html,body').scrollLeft(positionArrowScroll);
-		  
-           console.log("Progress Left Position:"+position);
-        },
-
-        complete: function() {
-
-          var rightPosition = $(".database:visible").offset().left + $(".database:visible").width() - $(".arrow-right").width() * 2;
-		  //var rightPosition = $(".database:visible").offset().left + $(".database:visible").width() - $(".arrow-right").width() ;
-          var leftPosition = $(".database:visible").offset().left;
-
-          $(".arrow-right").css({
-            left: rightPosition
-			
+    if(currentProfile>0){
+        currentProfile--;
+        var position = $(".arrow-left").last().offset().left;
+    
+        $(".horizontal-line").last().css({
+          right: position,
+          width:0
+        }).animate({
+            width:  $(".database:visible").width()*1.5
+          },
+          {
+            duration: 1000,
+            progress: function() {
+              var position = $(".arrow-left").last().offset().left - $(".horizontal-line").last().width() + $(".database:visible").width() / 2;
+        			$('html,body').scrollLeft(position);
+            },
+            complete: function() {
+              var rightPosition = $(".database:visible").offset().left + $(".database:visible").width() - $(".arrow-right").width() * 2;
+              var leftPosition = $(".database:visible").offset().left;
+    
+              $(".arrow-right").css({
+                left: rightPosition
+              });
+    
+              $(".arrow-left").css({
+                left: leftPosition
+              });
+    
+            }
           });
-
-          $(".arrow-left").css({
-            left: leftPosition
-          });
-
-        }
-      });
+    }
   });
  // ----------------------------------  END Arrow left --------------------------------
  
@@ -1420,59 +1401,63 @@ $(document).ready(function() {
 
     console.log("arrow right-clicked");
 
-    var line = $("<div></div>").addClass("horizontal-line");
-    $("body").append(line);
-
-    var position = $(".database").last().offset().left + $(".database").last().width();
-
-    $(".horizontal-line").last().css({
-      left: position
-    }).animate({
-        width: window.innerWidth
-      },
-      {
-
-        duration: 1000,
-        progress: function() {
-          var position = $(".horizontal-line").last().offset().left + $(".horizontal-line").last().width() - window.innerWidth / 2;
-		  //var position = $(".horizontal-line").last().offset().left + $(".horizontal-line").last().width() - window.innerWidth;
-		  //  positionArrowScroll = $(".horizontal-line").last().offset().left + $(".horizontal-line").last().width() - window.innerWidth ;
-          $('html,body').scrollLeft(position);
-		 //	$('html,body').scrollLeft(positionArrowScroll);
-			positionArrowScroll = position;
-          console.log("Progress Right Position:"+position);
+    if(currentProfile<pickSave.length-1){
+      currentProfile++;
+      var line = $("<div></div>").addClass("horizontal-line");
+      $("body").append(line);
+  
+      var position = $(".database").last().offset().left + $(".database").last().width();
+  
+      $(".horizontal-line").last().css({
+        left: position
+      }).animate({
+          width: window.innerWidth
         },
-
-        complete: function() {
-
-          var database = $("<div></div>").addClass("database");
-          var databaseText = $("<div></div>").addClass("database-text").text(pickSave[profileOrder].text);
-          var databaseImages = $("<img></img>").addClass("database-images").attr("src", pickSave[profileOrder].img);
-          var topPosition = $(".database").last().offset().top;
-          var leftPosition = $(".database").last().offset().left + $(".database").last().width();
-
-          $("body").append(database);
-
-          $(".database").last().append(databaseImages);
-          $(".database").last().append(databaseText);
-
-          $(".database").last().css({
-            left: leftPosition,
-            top: topPosition
-          });
-
-          var rightPosition = $(".database").last().offset().left + $(".database").last().width() - $(".arrow-right").width() * 2;
-		
-
-          $(".arrow-right").css({
-            left: rightPosition
-          });
-
-          $(".arrow-left").css({
-            left: leftPosition
-          });
-        }
-      });
+        {
+  
+          duration: 1000,
+          progress: function() {
+            var position = $(".horizontal-line").last().offset().left + $(".horizontal-line").last().width() - window.innerWidth / 2;
+  		  //var position = $(".horizontal-line").last().offset().left + $(".horizontal-line").last().width() - window.innerWidth;
+  		  //  positionArrowScroll = $(".horizontal-line").last().offset().left + $(".horizontal-line").last().width() - window.innerWidth ;
+            $('html,body').scrollLeft(position);
+  		 //	$('html,body').scrollLeft(positionArrowScroll);
+  			positionArrowScroll = position;
+            console.log("Progress Right Position:"+position);
+          },
+  
+          complete: function() {
+  
+            if(profileOrder<pickSave.length){
+              var database = $("<div></div>").addClass("database");
+              var databaseText = $("<div></div>").addClass("database-text").text(pickSave[profileOrder].text);
+              var databaseImages = $("<img></img>").addClass("database-images").attr("src", pickSave[profileOrder].img);
+              var topPosition = $(".database").last().offset().top;
+              var leftPosition = $(".database").last().offset().left + $(".database").last().width();
+    
+              $("body").append(database);
+    
+              $(".database").last().append(databaseImages);
+              $(".database").last().append(databaseText);
+    
+              $(".database").last().css({
+                left: leftPosition,
+                top: topPosition
+              });
+            }
+            var rightPosition = $(".database").last().offset().left + $(".database").last().width() - $(".arrow-right").width() * 2;
+  		
+  
+            $(".arrow-right").css({
+              left: rightPosition
+            });
+  
+            $(".arrow-left").css({
+              left: leftPosition
+            });
+          }
+        });
+    }
   });
 // ---------------------------------- END Arrow right --------------------------------
 
@@ -1523,157 +1508,6 @@ $(document).ready(function() {
               top: position
 			  
             });
-=======
-            });
-          });
-        }
-      });
-
-    console.log("clicked");
-  });
-
-  $(".arrow-left").click(function() {
-
-    var line = $("<div></div>").addClass("horizontal-line");
-    $("body").append(line);
-
-    var position = $(".arrow-left").last().offset().left;
-
-    $(".horizontal-line").last().css({
-      left: position
-    }).animate({
-        width: window.innerWidth
-      },
-      {
-        duration: 1000,
-        progress: function() {
-          var position = $(".horizontal-line").last().offset().left - $(".horizontal-line").last().width() - window.innerWidth / 2;
-          $('html,body').scrollLeft(position);
-
-          console.log(position);
-        },
-
-        complete: function() {
-
-          var rightPosition = $(".database:visible").offset().left + $(".database:visible").width() - $(".arrow-right").width() * 2;
-          var leftPosition = $(".database:visible").offset().left;
-
-          $(".arrow-right").css({
-            left: rightPosition
-          });
-
-          $(".arrow-left").css({
-            left: leftPosition
-          });
-
-        }
-      });
-  });
-
-  $(".arrow-right").click(function() {
-
-    profileOrder++;
-
-    console.log("arrow right-clicked");
-
-    var line = $("<div></div>").addClass("horizontal-line");
-
-    $("body").append(line);
-
-    var position = $(".database").last().offset().left + $(".database").last().width();
-
-    $(".horizontal-line").last().css({
-      left: position
-    }).animate({
-        width: window.innerWidth
-      },
-      {
-
-        duration: 1000,
-        progress: function() {
-          var position = $(".horizontal-line").last().offset().left + $(".horizontal-line").last().width() - window.innerWidth / 2;
-          $('html,body').scrollLeft(position);
-
-          console.log(position);
-        },
-
-        complete: function() {
-
-          var database = $("<div></div>").addClass("database");
-          var databaseText = $("<div></div>").addClass("database-text").text(pickSave[profileOrder].text);
-          var databaseImages = $("<img></img>").addClass("database-images").attr("src", pickSave[profileOrder].img);
-          var topPosition = $(".database").last().offset().top;
-          var leftPosition = $(".database").last().offset().left + $(".database").last().width();
-
-          $("body").append(database);
-
-          $(".database").last().append(databaseImages);
-          $(".database").last().append(databaseText);
-
-          $(".database").last().css({
-            left: leftPosition,
-            top: topPosition
-          });
-
-          var rightPosition = $(".database").last().offset().left + $(".database").last().width() - $(".arrow-right").width() * 2;
-
-          $(".arrow-right").css({
-            left: rightPosition
-          });
-
-          $(".arrow-left").css({
-            left: leftPosition
-          });
-        }
-      });
-  });
-
-  $("body").on("click", ".dot", function() {
-
-    var line = $("<div></div>").addClass("line");
-
-    $("body").append(line);
-
-    var position = $(".dot").last().offset().top + 10;
-
-    $(".line").last().css({
-      top: position
-    }).animate({
-        height: "600px"
-      },
-      {
-
-        duration: 1000,
-        progress: function() {
-          var position = $(".line").last().offset().top + $(".line").last().height() - window.innerHeight / 2;
-          $('html,body').scrollTop(position);
-        },
-
-        complete: function() {
-          if (BeginningClicks < numberOfBeginning) {
-            console.log(BeginningClicks, numberOfBeginning);
-            pickBeginning();
-            positioning();
-            BeginningClicks++;
-
-          } else if (MiddleClicks < numberOfMiddle) {
-            pickMiddle();
-            positioning();
-            MiddleClicks++;
-
-          } else if (!ending) {
-            pickEnd();
-            positioning();
-            ending = true;
-
-          } else {
-            $(".profile").show();
-            $(".arrow-down").show();
-            var position = $(".line").last().offset().top + $(".line").last().height();
-            $(".profile").last().css({
-              top: position
-            });
->>>>>>> f91f51fd40aaeb621afa6e3d4a8bcf23990e189b
             $(".arrow-down").last().css({
               top: position + 230
             });
@@ -1685,4 +1519,22 @@ $(document).ready(function() {
 
     );
   });
+  $("body").click(function(e){
+    if($(e.target).not('.database')) {
+      $(".informationImage").shows();
+    
+      $(".informationImage").css({right: $(".arrow-left").last().offset().left+1000});
+    }// if e
+  });
+// ----- click on body -----
+  $(".informationImage").click(function(e){
+    
+     
+      $(".informationImage").hide();
+    
+  });
+
+//--------------------------
+  
+  
 });
