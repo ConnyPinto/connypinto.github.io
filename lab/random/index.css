@@ -9,6 +9,10 @@ body{
 
 .words{
     color:white;
+     font-family: baskerville,'Libre Baskerville', serif;
+    width:100%;
+    text-align:center;
+    margin-top:300px;
 }
 
 .image{
